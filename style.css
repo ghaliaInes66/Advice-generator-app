@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+:root{
+  /*color*/
+--Light-Cyan: hsl(193, 38%, 86%);
+--Neon-Green: hsl(150, 100%, 66%);
+
+--Grayish-Blue: hsl(217, 19%, 38%);
+--Dark-Grayish-Blue: hsl(217, 19%, 24%);
+--Dark-Blue: hsl(218, 23%, 16%);
+
+/*font*/
+--font-size:28px;
+--font-family: 'Manrope', sans-serif;
+--font-Weights: 800;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: var(--Dark-Blue);
+  color: var(--Light-Cyan);
+  font-family: var(--font-family);
+  width: 100vw;
+  height: 100vh;
+}
+
+.container{
+  background-color: var(--Dark-Grayish-Blue);
+  width: 500px;
+  text-align: center;
+  margin: 220px auto 0 auto;
+  border-radius: 10px;
+  box-shadow: 40px 40px 5px var(--Dark-Blue);
+  position: relative;
+}
+
+.mobile{
+  display: none;
+}
+
+.pattern{
+  padding-bottom: 50px;
+  width: 85%;
+}
+
+
+h4{
+  letter-spacing: 5px;
+  padding-top:40px;
+  color: var(--Neon-Green);
+  text-transform: uppercase;
+}
+
+p{
+  font-size: var(--font-size);
+  font-weight: var(--font-Weights);
+  padding: 20px;
+}
+
+#advice::before{
+  content:open-quote ;
+}
+
+#advice::after{
+  content: close-quote;
+}
+
+#dice{
+  display: grid;
+  place-items: center;
+  background-color: var(--Neon-Green);
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  left: 50%;
+  cursor: pointer;
+}
+
+@media (max-width:550px) {
+  
+  
+  .mobile{
+    display: block;
+    width: 70%;
+    margin: 0 auto 0 auto;
+  }
+  .desktop{
+    display: none;
+  }
+
+  .container{
+    width: 90%;
+  }
+
+  p{
+    font-size: 15px
+  }
+  
+  #dice{
+    width: 40px;
+    height: 40px;
+  }
+  #dice> img{
+    width: 50%;
+  }
+}
