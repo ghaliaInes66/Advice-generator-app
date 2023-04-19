@@ -27,13 +27,14 @@ body{
   font-family: var(--font-family);
   width: 100vw;
   height: 100vh;
+  display: grid;
+  place-items: center;
 }
 
 .container{
   background-color: var(--Dark-Grayish-Blue);
   width: 500px;
   text-align: center;
-  margin: 220px auto 0 auto;
   border-radius: 10px;
   box-shadow: 40px 40px 5px var(--Dark-Blue);
   position: relative;
