@@ -31,7 +31,7 @@ body{
   place-items: center;
 }
 
-.container{
+main{
   background-color: var(--Dark-Grayish-Blue);
   width: 500px;
   text-align: center;
@@ -96,7 +96,7 @@ p{
     display: none;
   }
 
-  .container{
+  main{
     width: 90%;
   }
 
